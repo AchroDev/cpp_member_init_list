@@ -7,11 +7,12 @@ class Entity
 {
 private:
     std::string m_Name;
+    int m_Score;
 
 public:
     // Constructor that initializes the name now in a member list
     Entity()
-        : m_Name("Unknown")
+        : m_Name("Unknown"), m_Score(0)
     {
     }
     // Constructor that takes a name as a param and assing it to the m_Name var
