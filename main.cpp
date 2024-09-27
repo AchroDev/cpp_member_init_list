@@ -12,7 +12,7 @@ private:
 public:
     // Constructor that initializes the name now in a member list
     Entity()
-        : m_Name("Unknown"), m_Score(0)
+        : m_Name("Unknown"), m_Score(0) // This member list needs to written in order the variables are defined
     {
     }
     // Constructor that takes a name as a param and assing it to the m_Name var
@@ -20,6 +20,8 @@ public:
     {
         m_Name = name;
     }
+
+    // Constant getter constructor that references the Entity class
     const std::string &GetName() const { return m_Name; }
 };
 
