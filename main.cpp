@@ -24,6 +24,10 @@ public:
 
 int main()
 {
+    Entity e0;
+    std::cout << e0.GetName() << std::endl; // Showing the initialized name
+    Entity e1("AchroDev");
+    std::cout << e1.GetName() << std::endl; // Showing the name taken as a parameter
 
     std::cin.get();
 }
