@@ -7,18 +7,17 @@ class Entity
 {
 private:
     std::string m_Name;
-    int m_Score;
 
 public:
     // Constructor that initializes the name now in a member list
     Entity()
-        : m_Name("Unknown"), m_Score(0) // This member list needs to written in order the variables are defined
+        : m_Name("Unknown") // This member list needs to written in order the variables are defined, otherwise you will cause breaks later on
     {
     }
     // Constructor that takes a name as a param and assing it to the m_Name var
     Entity(const std::string &name)
+        : m_Name(name) // You're essentially switch using the '=' to putting the assignment in () and having it in the list instead of the body
     {
-        m_Name = name;
     }
 
     // Constant getter constructor that references the Entity class
